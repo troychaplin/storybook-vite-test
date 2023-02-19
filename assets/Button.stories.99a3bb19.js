@@ -1,2 +1,0 @@
-import{B as t}from"./Button.c5641cc5.js";import"./jsx-runtime.f1a71cba.js";import"./iframe.69686c9e.js";const e={title:"Example/Button",component:t,tags:["autodocs"],argTypes:{backgroundColor:{control:"color"}}},l={args:{primary:!0,label:"Button"}},n={args:{label:"Button"}},s={args:{size:"large",label:"Button"}},m={args:{size:"small",label:"Button"}},c=["Primary","Secondary","Large","Small"];export{s as Large,l as Primary,n as Secondary,m as Small,c as __namedExportsOrder,e as default};
-//# sourceMappingURL=Button.stories.99a3bb19.js.map
