@@ -1,7 +1,7 @@
 {
 	"name": "@troychaplin/design-ui",
 	"private": false,
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"type": "module",
 	"main": "dist/design-ui.cjs.js",
 	"module": "dist/design-ui.es.js",
