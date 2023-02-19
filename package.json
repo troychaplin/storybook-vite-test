@@ -1,7 +1,7 @@
 {
 	"name": "design-ui",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"main": "dist/design-ui.cjs.js",
 	"module": "dist/design-ui.es.js",
