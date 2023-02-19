@@ -3,9 +3,10 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import tsConfigPaths from "vite-tsconfig-paths";
+import tailwindcss from "tailwindcss";
 import * as packageJson from "./package.json";
 
-export default defineConfig((configEnv) => ({
+export default defineConfig(() => ({
 	plugins: [
 		react(),
 		tsConfigPaths(),
@@ -13,6 +14,11 @@ export default defineConfig((configEnv) => ({
 			include: ["src"],
 		}),
 	],
+	css: {
+		postcss: {
+			plugins: [tailwindcss],
+		},
+	},
 	build: {
 		lib: {
 			entry: resolve("src", "index.ts"),

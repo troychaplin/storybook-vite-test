@@ -8,15 +8,15 @@
 	"types": "dist/index.d.ts",
 	"files": [
 		"/dist",
-		"/dist/style.css"
+		"/dist/index.css"
 	],
 	"scripts": {
-		"build": "concurrently \"yarn build:css\" \"tsc && vite build\"",
-		"build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/index.css",
+		"build": "tsc && vite build && yarn build:css",
+		"build:css": "tailwindcss --postcss -m -i ./src/tailwind.css -o ./dist/index.css",
 		"storybook": "concurrently \"yarn storybook:css\" \"storybook dev -p 6006\"",
-		"storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
+		"storybook:css": "tailwindcss --postcss -w -i ./src/tailwind.css -o ./src/index.css",
 		"build-storybook": "concurrently \"yarn build-storybook:css\" \"storybook build\"",
-		"build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css",
+		"build-storybook:css": "tailwindcss -m -i ./src/tailwind.css -o ./src/index.css",
 		"clean": "rm -rf node_modules ; rm yarn.lock ; yarn install"
 	},
 	"devDependencies": {
@@ -35,6 +35,7 @@
 		"babel-loader": "^9.1.2",
 		"concurrently": "^7.6.0",
 		"postcss": "^8.4.21",
+		"postcss-import": "^15.1.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"storybook": "^7.0.0-beta.50",
