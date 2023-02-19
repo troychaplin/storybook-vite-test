@@ -513,6 +513,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.wrapper h1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity));
+}
+
+.wrapper + .wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity));
+}
+
 .contents {
   display: contents;
 }

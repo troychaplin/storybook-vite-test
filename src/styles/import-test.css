@@ -1,0 +1,9 @@
+@layer components {
+	.wrapper h1 {
+		@apply bg-purple-800;
+	}
+}
+
+.wrapper + .wrapper {
+	@apply bg-purple-800;
+}
