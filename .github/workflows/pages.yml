@@ -1,7 +1,4 @@
 name: Build GitHub Pages
-# on:
-#     release:
-#         types: [published]
 on:
     push:
         tags:
@@ -18,7 +15,7 @@ jobs:
               run: yarn install
 
             - name: 🔧 build docs
-              run: yarn build:docs
+              run: yarn build-storybook
 
             - name: 🚀 deploy
               uses: JamesIves/github-pages-deploy-action@v4
