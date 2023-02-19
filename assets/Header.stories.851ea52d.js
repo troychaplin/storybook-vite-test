@@ -1,0 +1,2 @@
+import{H as e}from"./Header.3fe0fbec.js";import"./Button.c5641cc5.js";import"./jsx-runtime.f1a71cba.js";import"./iframe.69686c9e.js";const s={title:"Example/Header",component:e,tags:["autodocs"],parameters:{layout:"fullscreen"}},n={args:{user:{name:"Jane Doe"}}},m={},d=["LoggedIn","LoggedOut"];export{n as LoggedIn,m as LoggedOut,d as __namedExportsOrder,s as default};
+//# sourceMappingURL=Header.stories.851ea52d.js.map
