@@ -1,11 +1,11 @@
 name: Publish to NPM
-on:
-    release:
-        types: [published]
 # on:
-#     push:
-#         tags:
-#             - "*"
+#     release:
+#         types: [published]
+on:
+    push:
+        tags:
+            - "*"
 jobs:
     release:
         name: 🚀 release
