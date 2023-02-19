@@ -6,12 +6,16 @@ const config: StorybookConfig = {
 		"@storybook/addon-essentials",
 		"@storybook/addon-interactions",
 	],
-	framework: {
-		name: "@storybook/react-vite",
-		options: {},
+	// framework: {
+	// 	name: "@storybook/react-vite",
+	// 	options: {},
+	// },
+	framework: "@storybook/react-vite", // OR whatever framework you're using
+	features: {
+		storyStoreV7: true,
 	},
 	docs: {
-		autodocs: "tag",
+		docsPage: true,
 	},
 };
 export default config;
